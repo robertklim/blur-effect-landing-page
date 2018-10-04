@@ -96,3 +96,40 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Mobile Vertical */
+
+@media(max-width: 560px) {
+
+    .showcase::after {
+        height: 50vh;   
+    }
+
+    .content {
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .content .logo {
+        height: 150px;
+        width: auto;
+    }
+
+    .content .text {
+        display: none;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .services div {
+        border-bottom: #333 solid 1px;
+        padding: 1.2rem 1rem;
+    }
+
+}
