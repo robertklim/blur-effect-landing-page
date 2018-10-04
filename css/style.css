@@ -1,0 +1,57 @@
+body {
+    background: rgba(0, 0, 0, 1.0);
+    margin: 0;
+    color: #ffffff;
+}
+
+.showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://source.unsplash.com/EjUuUK8gtjs/1920x1200');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 800ms;
+}
+
+.showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    transition: all 800ms;
+}
+
+.content .logo {
+    height: 180px;
+    width: auto;
+}
+
+.content .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+}
